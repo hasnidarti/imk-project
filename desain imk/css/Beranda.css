@@ -1,0 +1,280 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.header {
+  background-color: #3ba3f8;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  height: 30px;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #40a2e3;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #40a2e3;
+}
+.active {
+  font-weight: bold;
+  color: red;
+}
+.content {
+  margin-top: 80px; /* Height of the fixed header */
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.intro-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.intro-text h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.intro-text p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.intro-image {
+  flex: 1;
+  text-align: right;
+}
+
+.intro-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 100px;
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.image-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.description-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description-section p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.features {
+  background: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.card {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.books {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.book-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.book-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #40a2e3;
+  color: #fff;
+  padding: 40px 0 20px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .socials {
+  margin-top: 20px;
+}
+
+.footer-section .socials a {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #002b52;
+  font-size: 14px;
+}

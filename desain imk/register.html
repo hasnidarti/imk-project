@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/AksDigi.id_logo.png" alt="AksDigi.id Logo">
+        <nav>
+            <a href="beranda.html" class="active">Beranda</a>
+            <a href="peminjaman.html" class="active">Layanan</a>
+            <a href="koleksi.html">Koleksi</a>
+            <a href="aktivitas.html">Aktivitas</a>
+            <a href="Login.html">
+            <button class="login-btn">LOGIN</button>
+        </nav>
+    </div>
+    <main>
+        <div class="form-header-container">
+            <h1>Daftar Anggota</h1>
+
+            <div class="form-container">
+                <p class="form-title">Form Pendaftaran</p>
+                
+                <form>
+                    <div class="form-columns">
+                        <div class="form-left">
+                            <label for="fname">Nama:</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                            <label for="phone">Nomor Telepon:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="" required>
+
+                            <label for="gender">Jenis Kelamin:</label>
+                            <select id="gender" name="gender" required>
+                                <option value="male">Laki-laki</option>
+                                <option value="female">Perempuan</option>
+                            </select>
+
+                            <label for="idcard">Kartu Identitas:</label>
+                            <input type="text" id="idcard" name="idcard" placeholder="KTP/SIM" required>
+
+                            <label for="myfile">Unggah File:</label>
+                            <input type="file" id="myfile" name="myfile">
+
+                            <label for="birthplace">Tempat Lahir:</label>
+                            <input type="text" id="birthplace" name="birthplace" required>
+
+                            <label for="religion">Agama:</label>
+                            <select id="religion" name="religion" required>
+                                <option value="islam">Islam</option>
+                                <option value="christian">Kristen</option>
+                                <option value="catholic">Katolik</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="buddhist">Buddha</option>
+                            </select>
+
+                            <label for="education">Pendidikan Terakhir:</label>
+                            <select id="education" name="education" required>
+                                <option value="sd">SD</option>
+                                <option value="smp">SMP</option>
+                                <option value="sma">SMA</option>
+                                <option value="diploma">Diploma</option>
+                                <option value="sarjana">Sarjana</option>
+                            </select>
+
+                            <label for="work">Pekerjaan:</label>
+                            <input type="text" id="work" name="work" required>
+                        </div>
+
+                        <div class="form-right">
+                            <label for="lname">Email:</label>
+                            <input type="email" id="lname" name="email" placeholder="Your email.." required>
+
+                            <label for="subject">Alamat:</label>
+                            <textarea id="subject" name="subject" placeholder="alamat lengkap" required></textarea>
+
+                            <label for="psw">Password:</label>
+                            <input type="password" id="psw" name="password" placeholder="Your password.." required>
+
+                            <label for="psw-repeat">Ulangi Password:</label>
+                            <input type="password" id="psw-repeat" name="psw_repeat" placeholder="Repeat password.." required>
+                        </div>
+                    </div>
+                </form>
+                <div class="form-buttons">
+                    <a href="Login.html">
+                        <button type="submit">Daftar</button>
+                    </a>
+                    <button type="submit">Batal</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+

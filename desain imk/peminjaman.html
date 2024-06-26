@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AksDigi.id</title>
+    <link rel="stylesheet" href="/css/peminjaman.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+        function checkLoanDuration(event) {
+            event.preventDefault(); // Prevent form submission for validation
+            const loanDate = new Date(document.getElementById('loan-date').value);
+            const currentDate = new Date();
+            const timeDiff = currentDate - loanDate;
+            const dayDiff = timeDiff / (1000 * 3600 * 24);
+
+            if (dayDiff > 3) {
+                alert('Akses peminjaman telah melewati batas 3 hari. Harap kembalikan buku.');
+            } else {
+                document.getElementById('loan-form').submit(); // Submit form if within the allowed duration
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="images/AksDigi.id_logo.png" alt="AksDigi.id Logo">
+        <nav>
+            <a href="beranda.html" class="active">Beranda</a>
+            <a href="peminjaman.html" class="active">Layanan</a>
+            <a href="koleksi.html">Koleksi</a>
+            <a href="aktivitas.html">Aktivitas</a>
+            <a href="images/user.png"> <img src="/images/user.png" alt="userimages"> </a>
+        </nav>
+    </div>  
+    <main>
+        <div class="container">
+            <h1>Data Bacaan buku saya</h1>
+            <div class="content">
+                <div class="image-section">
+                    <img src="images/buku4.png" alt="Book Image">
+                </div>
+                <div class="form-section">
+                    <form id="loan-form" action="userpeminjaman.html" onsubmit="checkLoanDuration(event)">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" placeholder="Masukkan Nama Lengkap" required>
+
+                        <label for="book-type">Jenis Buku</label>
+                        <input type="text" id="book-type" placeholder="Masukkan Jenis Buku" required>
+
+                        <label for="loan-number">No. Peminjaman</label>
+                        <input type="text" id="loan-number" placeholder="Masukkan No. Peminjaman" required>
+
+                        <label for="book-title">Judul Buku</label>
+                        <input type="text" id="book-title" placeholder="Masukkan Judul Buku" required>
+
+                        <label for="loan-date">Tanggal Peminjaman</label>
+                        <input type="date" id="loan-date" required>
+                      
+
+                        <label for="loan-date">
+                            Tanggal pengembalian</label> <p>11/06/2024</p>
+                        
+
+                        <button type="submit">PINJAM</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <img src="images/AksDigi.id_logo.png" alt="logo AskDigi">
+                <p>Proyek Web Kami Bertujuan Untuk Memperkaya Setiap Pembaca Melalui Sumber Daya Dan Layanan Yang Kami Tawarkan.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Layanan</a></li>
+                    <li><a href="#">Koleksi</a></li>
+                    <li><a href="#">Aktivitas</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Hubungi Kami</h2>
+                <p>AksDigi.id</p>
+                <p>Jl. xxxx. No. 3, Tanjung Pinang 29125, Indonesia</p>
+                <p>Phone : 082288391058</p>
+                <p>Email : help@AksDigi.id</p>
+                <div class="socials">
+                    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/fb.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/yt.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright AksDigi.id. All Rights Reserved, 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
